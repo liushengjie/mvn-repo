@@ -1,0 +1,10 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Wed Dec 20 09:13:11 CST 2023
+http\://nexus.xach.lo/repository/maven-public/.error=
+http\://nexus.xach.lo/repository/maven-snapshots/.lastUpdated=1703034791019
+http\://nexus.xach.lo/repository/maven-snapshots/.error=
+http\://nexus.xach.lo/repository/maven-public/.lastUpdated=1703034791886
+http\://nexus.xach.lo/repository/maven-releases/.lastUpdated=1703034791030
+http\://nexus.xach.lo/repository/maven-central/.lastUpdated=1703034791897
+http\://nexus.xach.lo/repository/maven-releases/.error=
+http\://nexus.xach.lo/repository/maven-central/.error=
