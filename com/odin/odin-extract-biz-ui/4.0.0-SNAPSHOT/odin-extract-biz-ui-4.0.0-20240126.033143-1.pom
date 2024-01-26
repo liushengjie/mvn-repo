@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.odin</groupId>
+    <artifactId>odin-extract-biz</artifactId>
+    <version>4.0.0-SNAPSHOT</version>
+  </parent>
+  <groupId>com.odin</groupId>
+  <artifactId>odin-extract-biz-ui</artifactId>
+  <version>4.0.0-SNAPSHOT</version>
+  <description>UI</description>
+  <properties>
+    <maven-frontend-plugin.npmVersion>8.1.2</maven-frontend-plugin.npmVersion>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven-frontend-plugin.nodeVersion>v12.16.0</maven-frontend-plugin.nodeVersion>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <maven-frontend-plugin.version>1.12.0</maven-frontend-plugin.version>
+  </properties>
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-clean-plugin</artifactId>
+        <version>${maven-clean-plugin.version}</version>
+        <configuration>
+          <filesets>
+            <fileset>
+              <directory>dist</directory>
+            </fileset>
+          </filesets>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>com.github.eirslett</groupId>
+        <artifactId>frontend-maven-plugin</artifactId>
+        <version>${maven-frontend-plugin.version}</version>
+        <executions>
+          <execution>
+            <id>install node and npm</id>
+            <goals>
+              <goal>install-node-and-npm</goal>
+            </goals>
+          </execution>
+          <execution>
+            <id>npm node-sass</id>
+            <phase>generate-resources</phase>
+            <goals>
+              <goal>npm</goal>
+            </goals>
+            <configuration>
+              <arguments>rebuild node-sass</arguments>
+            </configuration>
+          </execution>
+          <execution>
+            <id>npm install</id>
+            <phase>generate-resources</phase>
+            <goals>
+              <goal>npm</goal>
+            </goals>
+            <configuration>
+              <arguments>install</arguments>
+            </configuration>
+          </execution>
+          <execution>
+            <id>npm run build</id>
+            <goals>
+              <goal>npm</goal>
+            </goals>
+            <configuration>
+              <arguments>run build</arguments>
+            </configuration>
+          </execution>
+        </executions>
+        <configuration>
+          <nodeVersion>${maven-frontend-plugin.nodeVersion}</nodeVersion>
+          <npmVersion>${maven-frontend-plugin.npmVersion}</npmVersion>
+          <nodeDownloadRoot>https://npm.taobao.org/mirrors/node/</nodeDownloadRoot>
+          <npmDownloadRoot>https://registry.npm.taobao.org/npm/-/</npmDownloadRoot>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
