@@ -3,27 +3,27 @@
   <groupId>com.odin</groupId>
   <artifactId>odin-base-springboot-starter</artifactId>
   <versioning>
-    <lastUpdated>20240122014405</lastUpdated>
+    <lastUpdated>20240126031518</lastUpdated>
     <snapshot>
-      <timestamp>20240122.014405</timestamp>
-      <buildNumber>1</buildNumber>
+      <timestamp>20240126.031518</timestamp>
+      <buildNumber>2</buildNumber>
     </snapshot>
     <snapshotVersions>
       <snapshotVersion>
         <extension>jar</extension>
-        <value>4.0.0-20240122.014405-1</value>
-        <updated>20240122014405</updated>
+        <value>4.0.0-20240126.031518-2</value>
+        <updated>20240126031518</updated>
       </snapshotVersion>
       <snapshotVersion>
         <extension>pom</extension>
-        <value>4.0.0-20240122.014405-1</value>
-        <updated>20240122014405</updated>
+        <value>4.0.0-20240126.031518-2</value>
+        <updated>20240126031518</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>sources</classifier>
         <extension>jar</extension>
-        <value>4.0.0-20240122.014405-1</value>
-        <updated>20240122014405</updated>
+        <value>4.0.0-20240126.031518-2</value>
+        <updated>20240126031518</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>
