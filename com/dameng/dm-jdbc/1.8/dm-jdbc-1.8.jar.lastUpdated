@@ -1,0 +1,9 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon Sep 04 16:39:38 CST 2023
+http\://nexus.xach.lo/repository/maven-snapshots/.error=
+http\://nexus.xach.lo/repository/maven-central/.lastUpdated=1693816778378
+https\://maven.aliyun.com/repository/spring/.lastUpdated=1693816778409
+http\://nexus.xach.lo/repository/maven-central/.error=
+http\://nexus.xach.lo/repository/maven-releases/.lastUpdated=1692257439711
+http\://nexus.xach.lo/repository/maven-snapshots/.lastUpdated=1692257439620
+https\://maven.aliyun.com/repository/spring/.error=
